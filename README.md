@@ -6,8 +6,8 @@
 		<b>Webservice</b>
 		<ul>
 			<li>Protheus Webservice CRUD Produtos:http://18.228.112.168:8086/ws/WS_PRODUTOS.apw?wsdl</li>
-			<li>RM Lista de Serviços:http://18.228.112.168:8086/ws/WS_PRODUTOS.apw?wsdl</li>
-			<li>RM Webservices:http://18.228.112.168:8086/ws/WS_PRODUTOS.apw?wsdl</li>
+			<li>RM Lista de Serviços:https://api.totvs.com.br/legado/#/rm-lista-servicos</li>
+			<li>RM Webservices:http://ferramentaseai.totvs.com.br:8051/wspageindex/</li>
 		</ul>
 	</li>
 </ul>

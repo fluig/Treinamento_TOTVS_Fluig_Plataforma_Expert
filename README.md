@@ -9,7 +9,9 @@
 <ul>
 	<li><b>Webservice</b>
 	<ul>
-		<li>Protheus:http://18.228.112.168:8086/ws/WS_PRODUTOS.apw?wsdl</li>
+		<li>Protheus Webservice CRUD Produtos:http://18.228.112.168:8086/ws/WS_PRODUTOS.apw?wsdl</li>
+		<li>RM Lista de Serviços:http://18.228.112.168:8086/ws/WS_PRODUTOS.apw?wsdl</li>
+		<li>RM Webservices:http://18.228.112.168:8086/ws/WS_PRODUTOS.apw?wsdl</li>
 	<ul>
 	</li>
 </ul>

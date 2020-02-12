@@ -1,0 +1,17 @@
+function resolve(process,colleague){
+
+	var userList = new java.util.ArrayList();
+
+	var dataset = DatasetFactory.getDataset("ds_gestao", null, null, null);
+	
+	for(var i=0; i<dataset.rowsCount; i++){
+		
+	}
+	
+	userList.add('matricula_1');
+	userList.add('matricula_2');
+	userList.add('matricula_3');
+
+	return userList;
+
+}

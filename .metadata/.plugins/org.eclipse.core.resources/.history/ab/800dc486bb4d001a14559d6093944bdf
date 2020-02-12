@@ -1,8 +1,8 @@
 function servicetask9(attempt, message) {
 	
-	var codigo = hAPI.getCardValue("txt_codigo");
-	var descricao = hAPI.getCardValue("txt_descricao");
-	var tipo = hAPI.getCardValue("txt_tpProduto");
+	var codigo = "";
+	var descricao = "";
+	var tipo = "";
 	
 	var c1 = DatasetFactory.createConstraint("ccod", codigo, codigo, ConstraintType.MUST);
 	var c2 = DatasetFactory.createConstraint("cdescr", descricao, descricao, ConstraintType.MUST);

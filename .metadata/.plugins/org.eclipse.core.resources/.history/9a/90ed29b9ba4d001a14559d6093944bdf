@@ -1,8 +1,8 @@
 function servicetask9(attempt, message) {
 	
-	var codigo = hAPI.getCardValue("txt_codigo");
-	var descricao = hAPI.getCardValue("txt_descricao");
-	var tipo = hAPI.getCardValue("txt_tpProduto");
+	var codigo = "";
+	var descricao = "";
+	var tipo = "";
 	
 	var c1 = DatasetFactory.createConstraint("ccod", codigo, codigo, ConstraintType.MUST);
 	var c2 = DatasetFactory.createConstraint("cdescr", descricao, descricao, ConstraintType.MUST);
@@ -12,9 +12,5 @@ function servicetask9(attempt, message) {
 	
 	var dataset = DatasetFactory.getDataset("ds_incluir_produto", null, filtro, null);
 	
-	if(dataset.getValue(0, "iNFO") != "OK"){
-		throw "Houve um erro na integração";
-	}
-	
 	return true;
-} 
+}

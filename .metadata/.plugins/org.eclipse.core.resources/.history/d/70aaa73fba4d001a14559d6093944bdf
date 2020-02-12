@@ -1,0 +1,10 @@
+function servicetask9(attempt, message) {
+	
+	var codigo = "";
+	var descricao = "";
+	var tipo = "";
+	
+	
+	
+	return true;
+}

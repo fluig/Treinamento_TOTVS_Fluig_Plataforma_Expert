@@ -1,0 +1,19 @@
+
+function setSelectedZoomItem(selectedItem) {
+	
+    var obj = selectedItem.inputName;
+
+    var index = (obj.indexOf("___") != -1) ? selectedItem.inputName.split("___")[1] : 0;
+    
+	if(obj == "txt_nomeAprovador___"+index){
+		$("#txt_matriculaAprovador___"+index).val(selectedItem.colleagueId);
+	}
+}
+
+function removedZoomItem(removedItem) {
+	var obj = removedItem.inputName;
+	
+	if(obj == "txt_nomeAprovador___"+index){
+		$("#txt_matriculaAprovador___"+index).val("");
+	}
+}

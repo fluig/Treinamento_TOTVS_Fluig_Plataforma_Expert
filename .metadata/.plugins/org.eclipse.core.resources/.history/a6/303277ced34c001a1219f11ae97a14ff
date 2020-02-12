@@ -1,0 +1,35 @@
+function enableFields(form){ 
+	
+	//Coleta de dados
+	var atual = getValue ("WKNumState")
+	var inicio = "7";
+	var analisar_gestor = "8";
+	var analisar_financ = "25";
+	
+	//Arrays
+	var habilita = [];
+	
+	if (atual == inicio || atual == 0){
+		habilita.push("solicitante")
+		habilita.push("email")
+		
+	}
+	
+	 if (atual == analisar_gestor ){
+		 habilita.push("desc_financ")
+		 habilita.push("aprov_financ")
+		 habilita.push("solicitante")
+	  
+	 }
+	 
+	 if (atual == analisar_financ ){
+		 habilita.push("aprov_gestor")
+		 habilita.push("desc_gestor")
+		 habilita.push("solicitante")
+		 
+	 }
+	
+	for (var i=0; i<habilita.length; i++){
+		form.setEnabled(habilita[i],false);
+	}
+}

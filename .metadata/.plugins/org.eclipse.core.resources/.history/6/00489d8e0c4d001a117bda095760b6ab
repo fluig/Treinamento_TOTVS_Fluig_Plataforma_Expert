@@ -1,0 +1,14 @@
+function validateForm(form){
+	
+   if (isNullOrEmpty(form, "dt_atualizacao")){
+     throw "O colaborador de abertura não foi informado";
+   } 
+}
+
+function isNullOrEmpty(form, campo){
+	if(form.getValue(campo) == null || form.getValue(campo).trim() == ""){
+		return true;
+	}
+	
+	return false;
+}

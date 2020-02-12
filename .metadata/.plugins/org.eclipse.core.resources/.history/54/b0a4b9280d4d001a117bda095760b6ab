@@ -1,0 +1,35 @@
+function validateForm(form){
+	
+	var msg = "";
+	
+	if (isNullOrEmpty(form, "dt_atualizacao")){
+		msg += "<br /> - O campo data é obrigatório.";
+	}
+	
+	var indexes = form.getChildrenIndexes("tb_aprovadores");
+	var total = 0;
+	
+	for (var i = 0; i < indexes.length; i++) {
+		var fieldValue = parseInt(form.getValue("aaaa___" + indexes[i]));
+		if (isNaN(fieldValue)){
+			fieldValue = 0;
+		}
+		total = total + fieldValue;
+	}
+	
+	
+	
+	if(msg != ""){
+		throw "Os seguintes campos são de preenchimento obrigatório: " + msg;
+	}
+	
+	
+}
+
+function isNullOrEmpty(form, campo){
+	if(form.getValue(campo) == null || form.getValue(campo).trim() == ""){
+		return true;
+	}
+	
+	return false;
+}

@@ -1,0 +1,76 @@
+<html>
+<head>
+	<link type="text/css" rel="stylesheet" href="/style-guide/css/fluig-style-guide.min.css"/>
+	<script type="text/javascript" src="/portal/resources/js/jquery/jquery.js"></script>
+	<script type="text/javascript" src="/portal/resources/js/jquery/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="/portal/resources/js/mustache/mustache-min.js"></script>
+	<script type="text/javascript" src="/style-guide/js/fluig-style-guide.min.js" charset="utf-8"></script>
+</head>
+<body>
+<div class="fluig-style-guide">
+<form name="form" role="form">
+
+	<div class="panel panel-default">
+		<div class="panel-heading">
+		    <h3 class="panel-title">Solicitante</h3>
+		</div>
+		<div class="panel-body">
+		    <div class="row">
+		    	<div class="col-md-4">
+		    		<div class="form-group">
+		    			<label for="txt_solicitante">Solicitante</label>
+		    			<input type="text" name="txt_solicitante" id="txt_solicitante" class="form-control">
+		    		</div>
+		    		
+		    		<div class="form-group">
+		    			<label for="txt_data">Data</label>
+		    			<input type="text" name="txt_data" id="txt_data" class="form-control">
+		    		</div>
+	    		
+	    		<div class="form-group">
+	    			<label for="txt_email">Email</label>
+	    			<input type="text" name="txt_email" id="txt_email" class="form-control">
+	    		</div>
+		    	</div>
+		    </div>
+
+		    <div class="row">
+		    	<div class="col-md-4">
+		    		<div class="form-group">
+		    			<label for="txt_telefoneRamal">Telefone/Ramal</label>
+		    			<input type="text" name="txt_telefoneRamal" id="txt_telefoneRamal" class="form-control">
+		    		</div>
+		    		
+		    		<div class="form-group">
+		    			<label for="txt_paisUnidade">País da Unidade</label>
+		    			<input type="text" name="txt_paisUnidade" id="txt_paisUnidade" class="form-control">
+		    		</div>
+	    		
+	    		<div class="form-group">
+	    			<label for="txt_estadoUnidade">Estado da Unidade</label>
+	    			<input type="text" name="txt_estadoUnidade" id="txt_estadoUnidade" class="form-control">
+	    		</div>
+		    	</div>
+		    </div>
+		    
+		<div class="row">
+	    	<div class="col-md-4">
+	    		<div class="form-group">
+	    			<label for="txt_telefoneRamal">Tipo Produto</label>
+	    			<input type="text" name="txt_telefoneRamal" id="txt_telefoneRamal" class="form-control">
+	    		</div>
+	    		
+	    		<div class="form-group">
+	    			<label for="txt_paisUnidade">justificativa</label>
+	    			<input type="text" name="txt_paisUnidade" id="txt_paisUnidade" class="form-control">
+	    		</div>    	
+	    	</div>
+	    </div>
+	    
+		</div>
+	</div>
+	
+</form>
+</div>
+</body>
+</html>

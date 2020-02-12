@@ -1,0 +1,8 @@
+function displayFields(form,customHTML){
+	
+	
+	var atividadeAtual = getValue("WKNumState");
+	
+	customHTML.append("");
+	
+}

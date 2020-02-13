@@ -8,6 +8,7 @@
 			<li>Protheus Webservice CRUD Produtos:http://18.228.112.168:8086/ws/WS_PRODUTOS.apw?wsdl</li>
 			<li>RM Lista de Serviços:https://api.totvs.com.br/legado/#/rm-lista-servicos</li>
 			<li>RM Webservices:http://ferramentaseai.totvs.com.br:8051/wspageindex/</li>
+			<li>Swagger:http://127.0.0.1:8080/process-management/swagger-ui/swagger.json</li>
 		</ul>
 	</li>
 </ul>

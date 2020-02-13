@@ -1,0 +1,37 @@
+var HelloWorld = SuperWidget.extend({
+    message: null,
+
+    init: function () {
+        //code
+    },
+
+    bindings: {
+        local: {
+            'show-message': ['click_showMessage']
+        }
+    },
+
+    showMessage: function () {
+        $div = $('#helloMessage_' + this.instanceId);
+        $message = $('<div>').addClass('message').append(this.message);
+        $div.append($message);
+    },
+    
+    salvarPreferencias: function (){
+    	var preferences = {
+		    newsSource: "fonte",
+		    url: "/news/feed/url",
+		    numberOfArticles: 10
+		};
+		  
+		WCMSpaceAPI.PageService.UPDATEPREFERENCES({
+		    async: true,
+		    success: function (data) {
+		            // código
+		    },
+		    fail: function (xhr, message, errorData) {
+		        // código
+		    }
+		}, this.instanceId, preferences);
+    }
+});

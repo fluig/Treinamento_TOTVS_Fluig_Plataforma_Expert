@@ -5,7 +5,6 @@ var HelloWorld = SuperWidget.extend({
     	var _this = this;
     	
     	_this.iniciarColorPick();
-    	_this.iniciarGrafico();
     },
 
     bindings: {

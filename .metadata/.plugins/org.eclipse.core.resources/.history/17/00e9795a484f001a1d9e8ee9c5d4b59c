@@ -96,10 +96,10 @@ var HelloWorld = SuperWidget.extend({
     		    	var lineChart = chart.line(data, options);
     			}, 
     			
-    			error: function(jqXHR, textStatus, errorThrown){
-    				console.log(jqXHR);
-    				console.log(textStatus);
-    				console.log(errorThrown);
+    			error: function(a,b,c){
+    				console.log(a);
+    				console.log(b);
+    				console.log(c);
     				
 					FLUIGC.toast({
 						title:"",
@@ -108,6 +108,8 @@ var HelloWorld = SuperWidget.extend({
 					})
     			}
     	}
+    	
+    	
     	
     	var c1 = DatasetFactory.createConstraint("coduser", WCMAPI.userCode, WCMAPI.userCode, ConstraintType.MUST);
     	var filtro = new Array(c1);

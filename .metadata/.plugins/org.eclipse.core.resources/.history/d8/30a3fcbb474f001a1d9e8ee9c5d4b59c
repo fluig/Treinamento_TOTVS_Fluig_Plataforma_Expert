@@ -63,56 +63,39 @@ var HelloWorld = SuperWidget.extend({
     
     iniciarGrafico: function(){
     	
-    	var callback = {
-    			success: function(dataset){
-    		    	var colunas = [];
-    		    	var dados = []
-
-    		    	for(var i=0; i<dataset.values.length; i++){
-    		    	    colunas[i] = dataset.values[i].Tipo
-    		    	    dados[i] = dataset.values[i].Total_Tarefas
-    		    	}
-    		    	
-    		    	var chart = FLUIGC.chart('#MY_SELECTOR');
-    		    	var data = {
-    				    labels: colunas,
-    				    datasets: [
-    				        {
-    				            label: "My First dataset",
-    				            fillColor: "rgba(120,120,120,0.2)",
-    				            strokeColor: "rgba(120,120,120,1)",
-    				            pointColor: "rgba(120,120,120,1)",
-    				            pointStrokeColor: "#fff",
-    				            pointHighlightFill: "#fff",
-    				            pointHighlightStroke: "rgba(120,120,120,1)",
-    				            data: dados
-    				        }
-    				    ]
-    				};
-    		    	var options = {
-    		    			
-    		    	}
-    		    	
-    		    	var lineChart = chart.line(data, options);
-    			}, 
-    			
-    			error: function(jqXHR, textStatus, errorThrown){
-    				console.log(jqXHR);
-    				console.log(textStatus);
-    				console.log(errorThrown);
-    				
-					FLUIGC.toast({
-						title:"",
-						message: "Falha ao carregar gráfico",
-						type:"error"
-					})
-    			}
-    	}
-    	
     	var c1 = DatasetFactory.createConstraint("coduser", WCMAPI.userCode, WCMAPI.userCode, ConstraintType.MUST);
     	var filtro = new Array(c1);
-    	var dataset = DatasetFactory.getDataset("ds_grafico", null, filtro, null, callback);
+    	var dataset = DatasetFactory.getDataset("ds_grafico", null, filtro, null);
     	
+    	var colunas = [];
+    	var dados = []
+
+    	for(var i=0; i<dataset.values.length; i++){
+    	    colunas[i] = dataset.values[i].Tipo
+    	    dados[i] = dataset.values[i].Total_Tarefas
+    	}
+    	
+    	var chart = FLUIGC.chart('#MY_SELECTOR');
+    	var data = {
+		    labels: colunas,
+		    datasets: [
+		        {
+		            label: "My First dataset",
+		            fillColor: "rgba(120,120,120,0.2)",
+		            strokeColor: "rgba(120,120,120,1)",
+		            pointColor: "rgba(120,120,120,1)",
+		            pointStrokeColor: "#fff",
+		            pointHighlightFill: "#fff",
+		            pointHighlightStroke: "rgba(120,120,120,1)",
+		            data: dados
+		        }
+		    ]
+		};
+    	var options = {
+    			
+    	}
+    	
+    	var lineChart = chart.line(data, options);
     }
     
 });

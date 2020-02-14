@@ -39,8 +39,6 @@ function createDataset(fields, constraints, sortFields) {
 		));
 	}
 	
-	new java.lang.Thread.sleep(5000);
-
 	return dataset;
 }
 

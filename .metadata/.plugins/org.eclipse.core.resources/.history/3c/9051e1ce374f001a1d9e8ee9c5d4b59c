@@ -19,7 +19,3 @@
     </div>
 
 </div>
-
-<!-- ACESSO A DATASETS POR MEIO DA BIBLIOTECA vcXMLRPC.js -->
-<script type="text/javascript" src="/webdesk/vcXMLRPC.js"></script>
-

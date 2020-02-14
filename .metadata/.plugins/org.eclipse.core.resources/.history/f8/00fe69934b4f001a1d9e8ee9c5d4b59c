@@ -62,14 +62,7 @@ var HelloWorld = SuperWidget.extend({
     },
     
     iniciarGrafico: function(){
-    	var _this = this;
-    	
-    	var myLoading1 = FLUIGC.loading('#HelloWorld_' + _this.instanceId, {
-    		textMessage:  'O gráfico está sendo carregado',
-    	    cursorReset: 'default',
-    	    fadeIn:  200,
-    	    fadeOut:  400
-    	});
+    	var myLoading1 = FLUIGC.loading('#grafico');
 
     	var callback = {
     			success: function(dataset){
@@ -102,8 +95,6 @@ var HelloWorld = SuperWidget.extend({
     		    	}
     		    	
     		    	var lineChart = chart.line(data, options);
-    		    	
-					myLoading1.hide();
     			}, 
     			
     			error: function(jqXHR, textStatus, errorThrown){

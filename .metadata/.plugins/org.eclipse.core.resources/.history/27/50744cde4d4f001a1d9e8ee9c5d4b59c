@@ -65,10 +65,37 @@ var HelloWorld = SuperWidget.extend({
     	var _this = this;
     	
     	var myLoading1 = FLUIGC.loading('#HelloWorld_' + _this.instanceId, {
-    		textMessage:  'O gráfico está sendo carregado',
+    		textMessage:  '<h1>Please wait...</h1>', 
+    	    title: null,
+    	    css: {
+    	        padding:        0,
+    	        margin:         0,
+    	        width:          '30%',
+    	        top:            '40%',
+    	        left:           '35%',
+    	        textAlign:      'center',
+    	        color:          '#000',
+    	        border:         '3px solid #aaa',
+    	        backgroundColor:'#fff',
+    	        cursor:         'wait'
+    	    },
+    	    overlayCSS:  { 
+    	        backgroundColor: '#000', 
+    	        opacity:         0.6, 
+    	        cursor:          'wait'
+    	    }, 
     	    cursorReset: 'default',
+    	    baseZ: 1000,
+    	    centerX: true,
+    	    centerY: true,
+    	    bindEvents: true,
     	    fadeIn:  200,
-    	    fadeOut:  400
+    	    fadeOut:  400,
+    	    timeout: 0,
+    	    showOverlay: true, 
+    	    onBlock: null,
+    	    onUnblock: null,
+    	    ignoreIfBlocked: false
     	});
 
     	var callback = {

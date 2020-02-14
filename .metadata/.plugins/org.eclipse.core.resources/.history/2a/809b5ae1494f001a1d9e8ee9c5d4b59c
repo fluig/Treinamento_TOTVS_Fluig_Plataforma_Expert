@@ -62,19 +62,11 @@ var HelloWorld = SuperWidget.extend({
     },
     
     iniciarGrafico: function(){
-    	var _this = this;
     	
-    	var myLoading1 = FLUIGC.loading('#HelloWorld_' + _this.instanceId, {
-    		textMessage:  'O gráfico está sendo carregado',
-    	    cursorReset: 'default',
-    	    fadeIn:  200,
-    	    fadeOut:  400
-    	});
-
     	var callback = {
     			success: function(dataset){
     		    	var colunas = [];
-    		    	var dados = [];
+    		    	var dados = []
 
     		    	for(var i=0; i<dataset.values.length; i++){
     		    	    colunas[i] = dataset.values[i].Tipo
@@ -102,8 +94,6 @@ var HelloWorld = SuperWidget.extend({
     		    	}
     		    	
     		    	var lineChart = chart.line(data, options);
-    		    	
-					myLoading1.hide();
     			}, 
     			
     			error: function(jqXHR, textStatus, errorThrown){
@@ -115,13 +105,9 @@ var HelloWorld = SuperWidget.extend({
 						title:"",
 						message: "Falha ao carregar gráfico",
 						type:"error"
-					});
-					
-					myLoading1.hide();
+					})
     			}
     	}
-    	
-    	myLoading1.show();
     	
     	var c1 = DatasetFactory.createConstraint("coduser", WCMAPI.userCode, WCMAPI.userCode, ConstraintType.MUST);
     	var filtro = new Array(c1);

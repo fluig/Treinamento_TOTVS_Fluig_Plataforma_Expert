@@ -5,6 +5,7 @@ function displayFields(form,customHTML){
 	
 	var nomeUser = fluigAPI.getUserService().getCurrent().getFullName();
 	
+	
 	var ATIV_ATUAL = getValue("WKNumState");
 	
 	var INICIO = 2;

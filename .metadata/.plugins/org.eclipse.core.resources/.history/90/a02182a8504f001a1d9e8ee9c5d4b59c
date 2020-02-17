@@ -3,7 +3,8 @@ function displayFields(form,customHTML){
 	
 	var user = getValue("WKUser");
 	
-	var nomeUser = fluigAPI.getUserService().getCurrent().getFullName();
+	var nomeUser = FluigAPI.getUserService().getCurrent().getFullName();
+	
 	
 	var ATIV_ATUAL = getValue("WKNumState");
 	
@@ -27,6 +28,7 @@ function displayFields(form,customHTML){
 	
 	customHTML.append("});");
 	customHTML.append("</script>");
+	
 }
 
 function dataAgora(){

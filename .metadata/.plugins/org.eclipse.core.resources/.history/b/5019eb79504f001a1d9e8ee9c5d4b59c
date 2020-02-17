@@ -3,7 +3,8 @@ function displayFields(form,customHTML){
 	
 	var user = getValue("WKUser");
 	
-	var nomeUser = fluigAPI.getUserService().getCurrent().getFullName();
+	FluigAPI.getUserService().getCurrent().getFullName();
+	
 	
 	var ATIV_ATUAL = getValue("WKNumState");
 	
@@ -17,7 +18,7 @@ function displayFields(form,customHTML){
 	
 	if(ATIV_ATUAL == INICIO || ATIV_ATUAL == 0){
 		
-		form.setValue("txt_solicitante", nomeUser);
+		form.setValue("txt_solicitante", user);
 		form.setValue("txt_data", dataAgora());
 
 		customHTML.append("$(\"#panelAprovacaoGestor\").hide();");
@@ -27,6 +28,7 @@ function displayFields(form,customHTML){
 	
 	customHTML.append("});");
 	customHTML.append("</script>");
+	
 }
 
 function dataAgora(){

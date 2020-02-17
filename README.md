@@ -22,6 +22,14 @@
 </ul>
 <ul>		
 	<li>
+		<b>Slide</b>
+		<ul>
+			<li>Arquivo:https://github.com/LuisRossi96/Fluig-Expert/blob/master/Desenvolvedor%20Fluig%20Expert.pptx</li>
+		</ul>
+	</li>
+</ul>
+<ul>		
+	<li>
 		<b>Documentações do Fluig</b>
 		<ul>
 			<li>Dev Fluig:https://tdn.totvs.com/display/public/fluig/DEV+fluig/</li>

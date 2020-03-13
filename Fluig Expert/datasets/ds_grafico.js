@@ -13,7 +13,7 @@ function createDataset(fields, constraints, sortFields) {
 	var codUser = null;
 	
 	if(constraints != null){
-		for(var i = 0; i< constraints.length; i++){
+		for(var i = 0; i < constraints.length; i++){
 			if(constraints[i].fieldName == "coduser"){
 				codUser = constraints[i].initialValue;
 			}
@@ -21,10 +21,10 @@ function createDataset(fields, constraints, sortFields) {
 	}
 	
 	var sendData = {
-		companyId : fluigAPI.getSecurityService().getCurrentTenantId() + '',
-		serviceCode : "TasksRest",
-		endpoint : "/getResumedTasks/" + codUser,
-		method : "GET"
+			companyId: fluigAPI.getSecurityService().getCurrentTenantId() + '',
+			serviceCode: "Tasks",
+			endpoint: "/getResumedTasks/" + codUser,
+			method: "GET"
 	}
 	
 	var clientService = fluigAPI.getAuthorizeClientService();
@@ -32,15 +32,15 @@ function createDataset(fields, constraints, sortFields) {
 	
 	var json = JSON.parse(vo.getResult());
 	
-	for(var i=0;i<json.content.length; i++){
+	for(var i=0; i < json.content.length; i++){
 		dataset.addRow(new Array(
 			json.content[i]["type"],
 			json.content[i]["totalTask"]
 		));
 	}
 	
-	new java.lang.Thread.sleep(5000);
-
+	//new java.lang.Thread.sleep(10000);
+	
 	return dataset;
 }
 

@@ -1,32 +1,34 @@
 function displayFields(form,customHTML){
-	
-	
-	var user = getValue("WKUser");
-	
-	var nomeUser = fluigAPI.getUserService().getCurrent().getFullName();
-	
 	var ATIV_ATUAL = getValue("WKNumState");
 	
-	var INICIO = 2;
-	var APROV_GESTOR = 3;
-	var APROV_FINANC = 7;
-	var CORRECAO = 13;
+	var ATV_INICIO = 4;
+	var ATV_APROV_GESTOR = 5;
+	var ATV_APROV_FINANC = 11;
 	
-	customHTML.append("<script>");
-	customHTML.append("$(document).ready(function(){");
+	customHTML.append("<script>");		
+	customHTML.append("$(document).ready(function (){");
 	
-	if(ATIV_ATUAL == INICIO || ATIV_ATUAL == 0){
-		
-		form.setValue("txt_solicitante", nomeUser);
-		form.setValue("txt_data", dataAgora());
+	if(ATIV_ATUAL == 0 || ATIV_ATUAL == ATV_INICIO){
+		form.setValue("txt_solicitante", getDadosUsuario().getFullName());
+		form.setValue("txt_solic_email", getDadosUsuario().getEmail());
+		form.setValue("txt_dt_solic", dataAgora());
 
-		customHTML.append("$(\"#panelAprovacaoGestor\").hide();");
-		customHTML.append("$(\"#panelAprovacaoFinanceiro\").hide();");
-		customHTML.append("$(\"#panelIntegracaoProduto\").hide();");
+		customHTML.append("$(\"#panelAprovacao\").hide();");
+		customHTML.append("$(\"#panelProduto\").hide();");
 	}
 	
+	if(ATIV_ATUAL == ATV_APROV_GESTOR){
+		customHTML.append("$(\"#aprovacaoFinanceiro\").hide();");
+		customHTML.append("$(\"#panelProduto\").hide();");
+		customHTML.append("$(\"#panelSolicitante label.obrigatorio span\").hide();");
+	}
+
 	customHTML.append("});");
 	customHTML.append("</script>");
+}
+
+function getDadosUsuario(){
+	return fluigAPI.getUserService().getCurrent();
 }
 
 function dataAgora(){

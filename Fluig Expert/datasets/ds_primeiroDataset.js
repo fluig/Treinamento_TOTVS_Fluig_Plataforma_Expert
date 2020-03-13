@@ -5,19 +5,22 @@ function onSync(lastSyncDate) {
 
 }
 function createDataset(fields, constraints, sortFields) {
-	var dataset = DatasetBuilder.newDataset();
-	
-	dataset.addColumn("Coluna_1");
-	dataset.addColumn("Coluna_2");
-	dataset.addColumn("Coluna_3");
-	dataset.addColumn("Coluna_4");
-	
-	dataset.addRow(new Array("Valor 01", "Valor 02", "Valor 03", "Valor 04"));
-	dataset.addRow(new Array("Valor 011", "Valor 022", "Valor 033", "Valor 044"));
-	dataset.addRow(new Array("Valor 0111", "Valor 0222", "Valor 0333", "Valor 0444"));
-	dataset.addRow(new Array("Valor 01111", "Valor 02222", "Valor 03333", "Valor 04444"));
-
-	return dataset;
+    var dataset = DatasetBuilder.newDataset();
+       
+    //Cria as colunas
+    dataset.addColumn("Sigla");
+    dataset.addColumn("Estado");
+    dataset.addColumn("Capital");
+    dataset.addColumn("Area");
+      
+    //Cria os registros
+    dataset.addRow(new Array("AM", "Amazonas", "Manaus", 1570746));
+    dataset.addRow(new Array("PA", "Pará", "Belém", 1247690));
+    dataset.addRow(new Array("MT", "Mato Grosso", "Cuiabá", 903358));
+    dataset.addRow(new Array("TO", "Tocantins", "Palmas", 277621));
+    dataset.addRow(new Array("PI", "Piauí", "Teresina", 251529));
+     
+    return dataset;
 }
 function onMobileSync(user) {
 

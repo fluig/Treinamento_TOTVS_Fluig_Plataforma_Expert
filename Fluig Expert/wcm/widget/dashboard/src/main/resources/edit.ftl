@@ -3,6 +3,15 @@
 
     <!-- efetua a tradução do texto do objeto i18n -->	
     <h1>${i18n.getTranslation('hello.example.helloedit')}</h1>
-	<input class="form-control" id="colorpicker-example-generic" type="text" name="colorpicker-example-generic" value="${cor}" />
-	<button type="button" class="btn btn-success" data-salvar>Salvar</button>
+	
+	<div class="row">
+		<div class="col-md-6">
+			<input class="form-control" id="colorpicker-example-generic" type="text" name="colorpicker-example-generic" value="#58595B" />
+		</div>
+		
+		<div class="col-md-6">
+			<button type="button" class="btn btn-info" data-salvarPreferencias>Salvar</button>
+		</div>
+	</div>
+	
 </div>

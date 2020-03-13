@@ -1,8 +1,8 @@
 application.type=widget
 application.code=dashboard
 application.title=Dashboard
-application.description=Dashboard sobre as tarefas pendentes do usuario logado
-application.category=SYSTEM
+application.description=Dashboard
+application.category=Treinamento
 application.renderer=freemarker
 developer.code=EC2AMAZ-RR9E5DT
 developer.name=Administrador
@@ -14,6 +14,5 @@ edit.file=edit.ftl
 locale.file.base.name=dashboard
 application.resource.js.1=/resources/js/dashboard.js
 application.resource.css.2=/resources/css/dashboard.css
-
-application.resource.component.3=fluigcolorpicker
-application.resource.component.4=fluigchart
+application.resource.component.3=fluigchart
+application.resource.component.4=fluigcolorpicker

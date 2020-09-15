@@ -12,14 +12,7 @@
 		</ul>
 	</li>
 </ul>
-<ul>		
-	<li>
-		<b>Acessos VM</b>
-		<ul>
-			<li>Arquivo .bat:https://github.com/LuisRossi96/Fluig-Expert/tree/master/Acessos%20VM</li>
-		</ul>
-	</li>
-</ul>
+
 <ul>		
 	<li>
 		<b>Slide</b>

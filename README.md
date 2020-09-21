@@ -1,29 +1,32 @@
-# Fluig-Expert
+# Treinamento Fluig Expert
 
 <h3>Links</h3>
+
 <ul>
 	<li>
-		<b>Webservice</b>
+		<b>Integração</b>
 		<ul>
-			<li>Protheus Webservice CRUD Produtos:http://18.228.112.168:8086/ws/WS_PRODUTOS.apw?wsdl</li>
-			<li>RM Lista de Serviços:https://api.totvs.com.br/legado/#/rm-lista-servicos</li>
-			<li>RM Webservices:http://ferramentaseai.totvs.com.br:8051/wspageindex/</li>
-			<li>Swagger:http://127.0.0.1:8080/process-management/swagger-ui/swagger.json</li>
+			<li>Webservice TOTVS Protheus: <URL_PROTHEUS>/ws</li>
+			<li>TOTVS RM Lista de Serviços: https://api.totvs.com.br/legado/#/rm-lista-servicos</li>
+			<li>TOTVS RM Webservices: http://ferramentaseai.totvs.com.br:8051/wspageindex/</li>
+			<li>Novas APIs TOTVS Fluig: <URL_FLUIG>/api-rest</li>
+			<li>APIs Antigas TOTVS Fluig: <URL_FLUIG>/api</li>
 		</ul>
 	</li>
 </ul>
 
 <ul>		
 	<li>
-		<b>Slide</b>
+		<b>Apresentação </b>
 		<ul>
-			<li>Arquivo:https://github.com/LuisRossi96/Fluig-Expert/blob/master/Desenvolvedor%20Fluig%20Expert.pptx</li>
+			<li>Arquivo:https://github.com/LuisRossi96/Fluig-Expert/blob/master/TOTVS%20Fluig%20Expert.pdf</li>
 		</ul>
 	</li>
 </ul>
+
 <ul>		
 	<li>
-		<b>Documentações do Fluig</b>
+		<b>Documentações do TOTVS Fluig</b>
 		<ul>
 			<li>Dev Fluig:https://tdn.totvs.com/display/public/fluig/DEV+fluig/</li>
 			<li>Style Guide Fluig:https://style.fluig.com/</li>

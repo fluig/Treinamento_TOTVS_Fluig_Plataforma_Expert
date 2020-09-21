@@ -47,8 +47,8 @@ function calcTotal(obj) {
 	$("#txt_valor_total___"+index).val(total);
 }
 
+function adicionarLinha(){
+	var index = wdkAddChild("tb_produtos");
 
-
-
-
-
+	$("#txt_valor_unitario___"+index).mask("#00.000.000.000.000,00");
+}

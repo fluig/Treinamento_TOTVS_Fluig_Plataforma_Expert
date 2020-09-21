@@ -26,6 +26,7 @@ function defineStructure() {
 	addColumn("dESCRICAO");
 	addColumn("tIPO");
 	setKey(["cODIGO"]);
+	addIndex(["cODIGO"]);
 }
 
 function onSync(lastSyncDate) {

@@ -6,11 +6,11 @@
 	<li>
 		<b>Integração</b>
 		<ul>
-			<li>Webservice TOTVS Protheus: <URL_PROTHEUS>/ws</li>
+			<li>Webservice TOTVS Protheus: URL_PROTHEUS/ws</li>
 			<li>TOTVS RM Lista de Serviços: https://api.totvs.com.br/legado/#/rm-lista-servicos</li>
 			<li>TOTVS RM Webservices: http://ferramentaseai.totvs.com.br:8051/wspageindex/</li>
-			<li>Novas APIs TOTVS Fluig: <URL_FLUIG>/api-rest</li>
-			<li>APIs Antigas TOTVS Fluig: <URL_FLUIG>/api</li>
+			<li>Novas APIs TOTVS Fluig: URL_FLUIG/api-rest</li>
+			<li>APIs Antigas TOTVS Fluig: URL_FLUIG/api</li>
 		</ul>
 	</li>
 </ul>
@@ -19,7 +19,7 @@
 	<li>
 		<b>Apresentação </b>
 		<ul>
-			<li>Arquivo:https://github.com/LuisRossi96/Fluig-Expert/blob/master/TOTVS%20Fluig%20Expert.pdf</li>
+			<li>Arquivo:https://github.com/fluig/Treinamento_Fluig_Expert/blob/master/TOTVS%20Fluig%20Expert.pdf</li>
 		</ul>
 	</li>
 </ul>

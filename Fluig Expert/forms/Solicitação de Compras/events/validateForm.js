@@ -16,17 +16,27 @@ function validateForm(form){
 	}
 	
 	else if(ATIV_ATUAL == ATV_APROV_GESTOR){
-		if(isNullOrEmpty(form, "txt_aprov_gestor")) msg += "<br /> - " + i18n.translate("aprovacaoGestor.aprovacao");
-		if(isNullOrEmpty(form, "txt_justificativa_gestor")) msg += "<br /> - " + i18n.translate("aprovacaoGestor.justificativa");
+		if(isNullOrEmpty(form, "txt_aprov_gestor")) {
+			msg += "<br /> - " + i18n.translate("aprovacaoGestor.aprovacao");
+		} else{
+			if(form.getValue("txt_aprov_gestor") == "nao"){
+				if(isNullOrEmpty(form, "txt_justificativa_gestor")) msg += "<br /> - " + i18n.translate("aprovacaoGestor.justificativa");	
+			}
+		}
 	}
 
 	else if(ATIV_ATUAL == ATV_APROV_FINANC){
-		if(isNullOrEmpty(form, "txt_aprov_financ")) msg += "<br /> - " + i18n.translate("aprovacaoFinac.aprovacao");
-		if(isNullOrEmpty(form, "txt_justificativa_financ")) msg += "<br /> - " + i18n.translate("aprovacaoFinac.justificativa");
-
-		if(isNullOrEmpty(form, "txt_cod_produto")) msg += "<br /> - " + i18n.translate("produto.codigo");
-		if(isNullOrEmpty(form, "txt_descr_produto")) msg += "<br /> - " + i18n.translate("produto.descricao");
-		if(isNullOrEmpty(form, "txt_tp_produto")) msg += "<br /> - " + i18n.translate("produto.tipoProduto");
+		if(isNullOrEmpty(form, "txt_aprov_financ")){
+			msg += "<br /> - " + i18n.translate("aprovacaoFinac.aprovacao");
+		} else{
+			if(form.getValue("txt_aprov_financ") == "nao"){
+				if(isNullOrEmpty(form, "txt_justificativa_financ")) msg += "<br /> - " + i18n.translate("aprovacaoFinac.justificativa");			
+			} else{
+				if(isNullOrEmpty(form, "txt_cod_produto")) msg += "<br /> - " + i18n.translate("produto.codigo");
+				if(isNullOrEmpty(form, "txt_descr_produto")) msg += "<br /> - " + i18n.translate("produto.descricao");
+				if(isNullOrEmpty(form, "txt_tp_produto")) msg += "<br /> - " + i18n.translate("produto.tipoProduto");	
+			}
+		}
 	}
 	
 	if(msg != "") throw "Os seguintes campos são de preenchimento obrigatório: " + msg; 

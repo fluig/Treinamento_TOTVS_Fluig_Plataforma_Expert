@@ -6,7 +6,7 @@
 	
 	<div class="row">
 		<div class="col-md-6">
-			<input class="form-control" id="colorpicker-example-generic" type="text" name="colorpicker-example-generic" value="#58595B" />
+			<input class="form-control" id="colorpicker-example-generic" type="text" name="colorpicker-example-generic" value="${cor!''}" />
 		</div>
 		
 		<div class="col-md-6">

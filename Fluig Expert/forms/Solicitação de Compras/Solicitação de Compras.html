@@ -63,11 +63,11 @@
 					        'displayKey':'pais',
 					        'datasetId':'ds_pais',
 					        'maximumSelectionLength':'1',
-					        'placeholder':'Escolha o país',
+					        'placeholder':'i18n.translate(&quot;solicitante.ajuda.escolhaPais&quot;)',
 					        'fields':[
 					            {
 					               'field':'pais',
-					               'label':'País'
+					               'label':'i18n.translate(&quot;solicitante.zoom.pais.nome&quot;)'
 					            }
 					        ]
 					     }"
@@ -83,11 +83,11 @@
 					        'displayKey':'estado',
 					        'datasetId':'ds_estado',
 					        'maximumSelectionLength':'1',
-					        'placeholder':'Escolha o estado',
+					        'placeholder':'i18n.translate(&quot;solicitante.ajuda.escolhaEstado&quot;)',
 					        'fields':[
 					            {
 					               'field':'estado',
-					               'label':'Estado'
+					               'label':'i18n.translate(&quot;solicitante.zoom.estado.nome&quot;)'
 					            }
 					        ]
 					     }"
@@ -133,18 +133,18 @@
 							        'displayKey':'nome',
 							        'datasetId':'ds_produto',
 							        'maximumSelectionLength':'1',
-							        'placeholder':'Escolha o produto',
+							        'placeholder':'i18n.translate(&quot;dadosProduto.ajuda.escolhaProduto&quot;)',
 							        'fields':[
 							            {
 							               'field':'nome',
-							               'label':'Nome'
+							               'label':'i18n.translate(&quot;dadosProduto.zoom.produto.nome&quot;)'
 							            }
 							        ]
 							     }"
 							/>
 		       			</td>
 		       			<td>
-		       				<input type="text" class="form-control" id="txt_quantidade" name="txt_quantidade" onblur="calcTotal(this);">
+		       				<input type="number" class="form-control" id="txt_quantidade" name="txt_quantidade" onblur="calcTotal(this);">
 		       			</td>
 		       			<td>
 		       				<input type="text" class="form-control" id="txt_valor_unitario" name="txt_valor_unitario" onblur="calcTotal(this);">
@@ -167,14 +167,14 @@
 	    <div class="panel-body">
 	        <div id="aprovacaoGestor">
 		        <h2>i18n.translate("aprovacaoGestor.titulo")</h2>
-		        
+		      
 		        <div class="row">
 			        <div class="col-md-6">
 			        	<label for="txt_justificativa_gestor" class="obrigatorio">i18n.translate("aprovacaoGestor.justificativa")</label>
 			        	<textarea rows="5" cols="5" class="form-control" name="txt_justificativa_gestor" id="txt_justificativa_gestor"></textarea>
 			        </div>
 			        <div class="col-md-6">
-			        	<label>i18n.translate("aprovacaoGestor.aprovacao")</label>
+			        	<label class="obrigatorio">i18n.translate("aprovacaoGestor.aprovacao")</label>
 			        	<div class="custom-radio custom-radio-success">
 						    <input type="radio" name="txt_aprov_gestor" value="sim" id="txt_aprov_gestor_sim">
 						    <label for="txt_aprov_gestor_sim">i18n.translate("aprovacaoGestor.aprovacaoSim")</label>
@@ -199,7 +199,7 @@
 			        </div>
 			        <div class="col-md-6">
 			        	<div class="col-md-6">
-			        	<label>i18n.translate("aprovacaoFinac.aprovacao")</label>
+			        	<label class="obrigatorio">i18n.translate("aprovacaoFinac.aprovacao")</label>
 			        	<div class="custom-radio custom-radio-success">
 						    <input type="radio" name="txt_aprov_financ" value="sim" id="txt_aprov_financ_sim">
 						    <label for="txt_aprov_financ_sim">i18n.translate("aprovacaoFinac.aprovacaoSim")</label>

@@ -1,7 +1,7 @@
 <div id="HelloWorld_${instanceId}" class="super-widget wcm-widget-class fluig-style-guide"
      data-params="HelloWorld.instance({message: 'Hello world'})">
 	
-	<h1 style="color:${cor!''}">Central de tarefas</h1>
+	<h1 style="color:${cor!''}">Você está visualizando a página</h1>
     
     <div class="row">
     	<div class="col-md-6">

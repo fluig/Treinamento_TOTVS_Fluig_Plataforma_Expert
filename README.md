@@ -1,4 +1,4 @@
-# Treinamento Fluig Expert
+# Treinamento ECM & BPM - EXPERT
 
 <h3>Links</h3>
 
@@ -8,9 +8,10 @@
 		<ul>
 			<li>Webservice TOTVS Protheus: URL_PROTHEUS/ws</li>
 			<li>TOTVS RM Lista de Serviços: https://api.totvs.com.br/legado/#/rm-lista-servicos</li>
-			<li>TOTVS RM Webservices: http://ferramentaseai.totvs.com.br:8051/wspageindex/</li>
-			<li>Novas APIs TOTVS Fluig: URL_FLUIG/api-rest</li>
-			<li>APIs Antigas TOTVS Fluig: URL_FLUIG/api</li>
+			<li>TOTVS RM Webservices: URL_RM/wspageindex/</li>
+			<li>Novas APIs TOTVS Fluig Plataforma: URL_FLUIG/api-rest</li>
+			<li>APIs Antigas TOTVS Fluig Plataforma: URL_FLUIG/api</li>
+			<li>SDK TOTVS Fluig Plataforma: URL_FLUIG/api/sdk</li>
 		</ul>
 	</li>
 </ul>
@@ -19,14 +20,14 @@
 	<li>
 		<b>Apresentação </b>
 		<ul>
-			<li>Arquivo:https://github.com/fluig/Treinamento_Fluig_Expert/blob/master/TOTVS%20Fluig%20Expert.pdf</li>
+			<li>Arquivo:https://github.com/fluig/Treinamento_ECM_BPM_Expert/blob/master/ECM%20%26%20BPM%20-%20EXPERT.pdf</li>
 		</ul>
 	</li>
 </ul>
 
 <ul>		
 	<li>
-		<b>Documentações do TOTVS Fluig</b>
+		<b>Documentações do TOTVS Fluig Plataforma</b>
 		<ul>
 			<li>Dev Fluig:https://tdn.totvs.com/display/public/fluig/DEV+fluig/</li>
 			<li>Style Guide Fluig:https://style.fluig.com/</li>

@@ -20,7 +20,7 @@
 	<li>
 		<b>Apresentação </b>
 		<ul>
-			<li>Arquivo:https://github.com/fluig/Treinamento_ECM_BPM_Expert/blob/master/ECM%20%26%20BPM%20-%20EXPERT.pdf</li>
+			<li>Arquivo: https://github.com/fluig/Treinamento_TOTVS_Fluig_Plataforma_Expert/blob/master/TOTVS%20Fluig%20Plataforma%20Expert.pdf</li>
 		</ul>
 	</li>
 </ul>

@@ -6,12 +6,12 @@
 	<li>
 		<b>Integração</b>
 		<ul>
-			<li>Webservice TOTVS Protheus: URL_PROTHEUS/ws</li>
+			<li>Webservice TOTVS Protheus: <URL_PROTHEUS>/ws</li>
 			<li>TOTVS RM Lista de Serviços: https://api.totvs.com.br/legado/#/rm-lista-servicos</li>
-			<li>TOTVS RM Webservices: URL_RM/wspageindex/</li>
-			<li>Novas APIs TOTVS Fluig Plataforma: URL_FLUIG/api-rest</li>
-			<li>APIs Antigas TOTVS Fluig Plataforma: URL_FLUIG/api</li>
-			<li>SDK TOTVS Fluig Plataforma: URL_FLUIG/api/sdk</li>
+			<li>TOTVS RM Webservices: <URL_RM>wspageindex/</li>
+			<li>Novas APIs TOTVS Fluig Plataforma: <URL_FLUIG>/api-rest</li>
+			<li>APIs Antigas TOTVS Fluig Plataforma: <URL_FLUIG>/api</li>
+			<li>SDK TOTVS Fluig Plataforma: <URL_FLUIG>/api/sdk</li>
 		</ul>
 	</li>
 </ul>

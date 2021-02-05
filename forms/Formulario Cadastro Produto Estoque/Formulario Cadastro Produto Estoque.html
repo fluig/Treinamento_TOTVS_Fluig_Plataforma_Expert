@@ -1,0 +1,139 @@
+<!--
+	•	Formulário: Formulário Cadastro Produto Estoque
+	•	Nome dataset: fluig_form_cad_prod_estq
+	•	Pasta: 2
+	•	Campo Descritor: Descrição Padrão
+-->
+
+<html>
+<head>
+	<link type="text/css" rel="stylesheet" href="/style-guide/css/fluig-style-guide.min.css"/>
+	<script type="text/javascript" src="/portal/resources/js/jquery/jquery.js"></script>
+	<script type="text/javascript" src="/portal/resources/js/jquery/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="/portal/resources/js/mustache/mustache-min.js"></script>
+	<script type="text/javascript" src="/style-guide/js/fluig-style-guide.min.js" charset="utf-8"></script>
+</head>
+<body>
+<div class="fluig-style-guide">
+<form name="form" role="form">
+				
+		<!-- SECAO SOLICITANTE -->
+		<div class="panel panel-primary"  id="panelSolicitante">
+			<div class="panel-heading">
+			    <h3 class="panel-title">Solicitante</h3>
+			</div>
+			
+			<div class="panel-body">		    
+			    <div class="row">
+			    	<div class="col-md-4">
+				    	<div class="form-group">
+				    			<label class="control-label" for="txt_solicitante">Nome</label>
+					    		<input type="text" id="txt_solicitante" name="txt_solicitante" class="form-control" readonly
+								data-protection="Nome"
+								data-protection-anonymizable="true"
+								data-protection-name
+								data-protection-class-consent="O campo Nome é preenchido para facilitar a usabilidade do processo de Solicitação de Compras"
+					    		>
+				    	</div>
+			    	
+			    	</div>
+			    	<div class="col-md-4">
+				    	<div class="form-group">
+				    		<label class="control-label" for="txt_solic_email">E-mail</label>
+				    		<input type="text" id="txt_solic_email" name="txt_solic_email" class="form-control" readonly
+				    		data-protection="Email"
+							data-protection-anonymizable="true"
+							data-protection-mail
+							data-protection-class-consent="O campo Email é preenchido para facilitar a usabilidade do processo de Solicitação de Compras"
+				    		>
+			    		</div>
+			    	</div>	
+			    	<div class="col-md-4">
+			    		<div class="form-group">
+				    		<label class="control-label" for="txt_dt_solic">Data</label>
+				    		<input type="text" id="txt_dt_solic" name="txt_dt_solic" class="form-control" readonly>
+				    	</div>
+			    	</div>				    
+			    </div>
+				
+			
+			</div>
+		</div>
+		
+	
+		<!-- SECAO DADOS CADASTRAIS DO PRODUTO -->
+		<div class="panel panel-primary"  id="panelCadastroProduto">
+			<div class="panel-heading">
+			    <h3 class="panel-title">Dados do cadastrais do produto</h3>
+			</div>
+			
+			<div class="panel-body">
+				<div class="row">
+		        	<div class="col-md-4">
+			        	<div class="form-group">
+			        		<label class="control-label" for="CODCOLIGADA">Cod. Coligada</label>
+			        		<input type="text" id="CODCOLIGADA" name="CODCOLIGADA" class="form-control" value="1" readonly>
+			        	</div>
+		        	</div>
+		        	<div class="col-md-4">
+		        		<div class="form-group">
+			        		<label class="control-label" for="IDPRD">ID do Produto</label>
+			        		<input type="text" id="IDPRD" name="IDPRD" class="form-control" value="0" readonly>
+		        		</div>
+		        	</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-md-4">
+		        		<div class="form-group">
+			        		<label class="control-label" for="CODIGOPRD">Cod. Produto</label>
+			        		<input type="text" id="CODIGOPRD" name="CODIGOPRD" class="form-control">
+		        		</div>
+		        	</div>
+		        	<div class="col-md-4">
+		        		<div class="form-group">
+			        		<label class="control-label" for="NOMEFANTASIA">Nome Fantasia</label>
+			        		<input type="text" id="NOMEFANTASIA" name="NOMEFANTASIA" class="form-control">
+		        		</div>
+		        	</div>
+		        	<div class="col-md-4">
+		        		<div class="form-group">
+			        		<label class="control-label" for="DESCRICAO">Descrição</label>
+			        		<input type="text" id="DESCRICAO" name="DESCRICAO" class="form-control">
+		        		</div>
+		        	</div>
+				</div>				
+			</div>
+		</div>	
+	
+		<!-- SECAO GESTOR -->
+		<div class="panel panel-primary"  id="panelGestor">
+			<div class="panel-heading">
+		        <h3 class="panel-title">Gestor</h3>
+		    </div>
+		    <div class="panel-body">			      
+		        <div class="row">
+			        <div class="col-md-6">
+				        <div class="form-group">
+				        	<label class="control-label" for="txt_justificativa_gestor" >Justificativa</label>
+				        	<textarea rows="5" cols="5" class="form-control" name="txt_justificativa_gestor" id="txt_justificativa_gestor"></textarea>
+				        </div>
+			        </div>
+			        <div class="col-md-6">
+			        	<label class="control-label" >Solicitação aprovada?</label>
+			        	<div class="custom-radio custom-radio-success">
+						    <input type="radio" name="txt_aprov_gestor" value="sim" id="txt_aprov_gestor_sim">
+						    <label class="control-label" for="txt_aprov_gestor_sim">Sim</label>
+						</div>
+						<div class="custom-radio custom-radio-danger">
+						    <input type="radio" name="txt_aprov_gestor" value="nao" id="txt_aprov_gestor_nao">
+						    <label class="control-label" for="txt_aprov_gestor_nao">Não</label>
+						</div>
+			        </div>
+		        </div>			        
+		    </div>
+		</div>
+</form>
+</div>
+</body>
+</html>

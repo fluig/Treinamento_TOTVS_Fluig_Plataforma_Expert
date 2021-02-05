@@ -1,0 +1,17 @@
+application.type=layout
+application.code=layout_treinamento
+application.title=Layout Treinamento
+application.description=Layout Treinamento
+application.category=SYSTEM
+application.renderer=freemarker
+developer.code=EC2AMAZ-RR9E5DT
+developer.name=administrador
+developer.url=http://www.fluig.com
+layout.defaultSlot=SlotA
+layout.file=layout.ftl
+locale.file.base.name=layout_treinamento
+slot.SlotGlobalAlert=alertpopover
+slot.SlotInstantSearch=suggestsearch
+slot.SlotLogin=sociallogin
+slot.SlotMenu=menu
+slot.SlotUsePolicy=usepolicy

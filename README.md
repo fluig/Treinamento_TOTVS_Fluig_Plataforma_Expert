@@ -18,15 +18,6 @@
 
 <ul>		
 	<li>
-		<b>Apresentação </b>
-		<ul>
-			<li>Arquivo: https://github.com/fluig/Treinamento_TOTVS_Fluig_Plataforma_Expert/blob/master/TOTVS%20Fluig%20Plataforma%20Expert.pdf</li>
-		</ul>
-	</li>
-</ul>
-
-<ul>		
-	<li>
 		<b>Documentações do TOTVS Fluig Plataforma</b>
 		<ul>
 			<li>Dev Fluig:https://tdn.totvs.com/display/public/fluig/DEV+fluig/</li>

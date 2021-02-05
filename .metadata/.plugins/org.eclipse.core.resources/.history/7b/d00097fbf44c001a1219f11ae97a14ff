@@ -1,9 +1,0 @@
-
-function setSelectedZoomItem(selectedItem) {
-	
-	var inputName= "txt_estadoUnidade";
-	var filterValues = "";
-	
-	reloadZoomFilterValues(inputName, filterValues);
-}
-

@@ -1,9 +1,0 @@
-
-function setSelectedZoomItem(selectedItem) {
-	
-	var inputName= "";
-	var filterValues = "";
-	
-	reloadZoomFilterValues(inputName, filterValues);
-}
-

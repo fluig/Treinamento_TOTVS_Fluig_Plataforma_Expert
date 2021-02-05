@@ -1,4 +1,0 @@
-	var INICIO = 2;
-	var APROV_GESTOR = 3;
-	var APROV_FINANC = 7;
-	var CORRECAO = 13;

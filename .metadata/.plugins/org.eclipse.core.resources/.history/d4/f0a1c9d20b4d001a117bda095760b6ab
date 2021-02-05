@@ -1,1 +1,0 @@
-function validateForm(form){}

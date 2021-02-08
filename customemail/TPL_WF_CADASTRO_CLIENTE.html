@@ -1,0 +1,63 @@
+<html>
+<head>
+    <title>Fluig</title>
+    <link href="${SERVER_URL}/globalmailsender/resources/global.css" type="text/css" rel="stylesheet" />
+</head>
+<body leftmargin="0" topmargin="0" marginheight="0" marginwidth="0">
+    <div align="left">
+        <table cellspacing="0" cellpadding="0" border="0">
+            <tbody>
+                <tr>
+                    <td>
+						<img src="${SERVER_URL}/portal/resources/images/logo.png">
+					</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <br />
+    <div align="left">
+        <table cellspacing="0" cellpadding="0" border="0">
+            <tbody>
+                <tr>
+                    <td>
+                    	<p class="DescrMsgForum">Olá! <b>${NOME_SOLICITANTE}</b></p>
+						<p class="DescrMsgForum">A sua solicitação <b>${NUMERO_SOLIC}</b> para <b>cadastrar</b> o cliente <b>${COD_CLIENTE}  - ${DESCR_CLIENTE}</b> foi concluída.</p>
+						<p class="DescrMsgForum">Clique <a href="${SERVER_URL}/portal/p/${CODIGO_EMPRESA}/pageworkflowview?app_ecm_workflowview_detailsProcessInstanceID=${NUMERO_SOLIC}" class="LinkAcao">aqui</a> para acessar a solicitação.</p>
+					</td>
+                </tr>
+                <tr>
+                    <td>
+						 <p class="DescrMsgForum">Atenciosamente,<br>Equipe Fluig.</p>                 
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+            </tbody>
+        </table>
+		<br />
+    </div>
+
+	<#if anexos??>
+		<div align="left">
+			<table cellspacing="0" cellpadding="0">
+				<thead>
+					<tr>
+						<th class="DescrMsgForum">Anexos</th>
+					</tr>
+				</thead>
+				<tbody>
+					<#list anexos as anexo>
+						<tr>
+							<td>
+								<a href="${anexo.link}" class="LinkAcao">${anexo.description}</a>
+							</td>
+						</tr>
+					</#list>
+				</tbody>
+			</table>
+		</div>
+	</#if>
+</body>
+</html>

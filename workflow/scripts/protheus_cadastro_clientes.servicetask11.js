@@ -31,8 +31,11 @@ function servicetask11() {
 		if(dataset.getValue(0, "status") != "201"){
 			throw dataset.getValue(0, "detalhe");
 		}
+
+		enviarEmail();
+
 	} catch(e){
 		log.info("Erro: " + e);
-		throw("Houve um erro na integração:"+e);
+		throw("Houve um erro na integração:" + e);
 	}
 }

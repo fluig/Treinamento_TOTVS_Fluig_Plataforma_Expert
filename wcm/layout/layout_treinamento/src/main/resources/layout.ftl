@@ -10,6 +10,12 @@
     <div class="wcm-all-content fluig-style-guide">
         <div id="wcm-content" class="clearfix wcm-background">
             
+            <#if user.fullName?has_content>
+                <h1>Olá ${user.fullName}</h1>
+                <#else>
+                <h1>Olá visitante</h1>
+            </#if>
+            
             <!-- Linha 01 -->
             <div class="row">
                 <div class="col-md-12">

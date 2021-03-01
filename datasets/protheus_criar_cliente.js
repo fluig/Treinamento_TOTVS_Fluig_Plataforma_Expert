@@ -1,5 +1,5 @@
 function createDataset(fields, constraints, sortFields) {
-	var dataset = DatasetFactory.newDataset();
+	var dataset = DatasetBuilder.newDataset();
 	
 	dataset.addColumn("status");
 	dataset.addColumn("detalhe");
